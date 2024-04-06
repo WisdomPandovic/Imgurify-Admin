@@ -1,0 +1,46 @@
+/* sidebar.css */
+.nav-link {
+    color: black !important;
+    padding: 20px !important;
+  }
+  
+  .link-icon {
+    color: white;
+  }
+
+  .bg-deem{
+  
+    background-color: #DDE5FC;
+    /* height: 100vh; */
+  }
+
+  .row>* {
+    padding-right: 0 !important; 
+     padding-left: 0 !important;
+}
+
+  .bg-deems{
+    background-color: #F5F5F5;
+    /* height: 100vh; */
+  }
+
+  .box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px ;
+    margin: 20px 0 !important;
+  }
+  
+  .box-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .box-text {
+    font-size: 18px;
+  }
+
+  .link-text{
+    padding: 20px !important;
+  }
