@@ -1,16 +1,17 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
-  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif !important;
 }
 
-.users-table{
+.users-table {
   background-color: #f0f0f0 !important;
   padding: 10px;
 }
@@ -33,51 +34,49 @@ body{
   display: block;
 }
 
-span{
-  color:red;
+span {
+  color: red;
 }
 
-
-
-.reg-bk{
+.reg-bk {
   padding: 20px;
   background-color: #141518;
 }
 
-.grid-5{
-  background-color: #2C2F34;
-padding: 10px 0;
+.grid-5 {
+  background-color: #2c2f34;
+  padding: 10px 0;
   text-align: center;
   border-radius: 5px;
 }
 
-.sc-bk{
+.sc-bk {
   background-color: #141518;
   margin: 20px;
   padding: 20px;
   border-radius: 5px;
 }
 
-.form-heading2{
+.form-heading2 {
   font-size: 15px !important;
   color: white;
   text-align: center;
   padding: 10px;
 }
 
-.form-btn2{
+.form-btn2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
 }
 
-.form-input{
-  background-color: #2C2F34;
+.form-input {
+  background-color: #2c2f34;
   padding: 20px;
   border-radius: 5px;
 }
 
-.form-input input{
+.form-input input {
   width: 100%;
   background-color: #141518;
   border: none;
@@ -86,17 +85,17 @@ padding: 10px 0;
 
 .form-content .form-control {
   background-color: #141518 !important;
-  border:none !important;
+  border: none !important;
   transition: none !important;
   color: #fff !important;
 }
 
-.td{
+.td {
   text-decoration: none;
   color: #fff;
 }
 
- .newpost{
+.newpost {
   text-decoration: none;
   color: #fff;
 }
@@ -108,7 +107,7 @@ padding: 10px 0;
   gap: 10px;
 }  */
 
-.nav-icons{
+.nav-icons {
   cursor: pointer;
   margin-top: 10px;
   padding-right: 10px;
@@ -118,105 +117,98 @@ padding: 10px 0;
   position: fixed;
   top: 0;
   right: 0;
-  width: 300px; 
+  width: 300px;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  color: #fff; 
-  background-color: rgba( 92, 59, 119, 255 );
+  color: #fff;
+  background-color: rgba(92, 59, 119, 255);
 }
 
-.popup{
-  background-color: rgba( 92, 59, 119, 255 );
+.popup {
+  background-color: rgba(92, 59, 119, 255);
   color: #fff;
 }
 
-.popup-flex{
+.popup-flex {
   display: flex;
   justify-content: space-between;
   padding: 20px 20px 0px;
 }
 
-.popup-link{
+.popup-link {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   gap: 40px;
 }
 
-.popup-link button{
-  background-color: rgba( 92, 59, 119, 255 );
+.popup-link button {
+  background-color: rgba(92, 59, 119, 255);
   border: none;
   color: #ccc;
 }
 
-.popup-welcomeX{
+.popup-welcomeX {
   cursor: pointer;
   color: red;
 }
 
-.popup-icon{
+.popup-icon {
   font-size: 30px;
   cursor: pointer;
 }
 
-.popup-icon2{
+.popup-icon2 {
   font-size: 15px;
   color: red;
 }
 
-.popup-icon3{
+.popup-icon3 {
   font-size: 15px;
   color: white;
 }
 
-.notification-bar{
+.notification-bar {
   cursor: pointer;
   display: flex;
   gap: 10px;
   padding: 20px 0px 10px 0px;
 }
 
-.notification-bar p{
-background-color: blueviolet;
-border-radius: 20px;
-padding: 5px;
+.notification-bar p {
+  background-color: blueviolet;
+  border-radius: 20px;
+  padding: 5px;
 }
 
-.notification{
+.notification {
   padding: 10px 0px;
-  /* font-size: 15px; */
   font-family: "Ubuntu", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.49;
-    color: #c8a9ff;
-    text-align: left;
-      overflow-y: auto;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.49;
+  color: #c8a9ff;
+  text-align: left;
+  overflow-y: auto;
 }
 
 .profile .form-control {
-  
-  background-color: #DDE5FC !important;
-
+  background-color: #dde5fc !important;
 }
 
-.profile .form-control input{
-  
+.profile .form-control input {
   background-color: #fff !important;
-
 }
 
-.profile .form-control select{
-  
+.profile .form-control select {
   background-color: #fff !important;
-
 }
 
-table img{
+table img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -226,7 +218,7 @@ table img{
   display: none;
 }
 
-.top-bar{
+.top-bar {
   background-color: white;
 }
 
@@ -235,14 +227,16 @@ table img{
   background-color: white !important;
 }
 
+.box {
+  border-radius: 10px;
+}
 
 @media (max-width: 768px) {
   .desktop-message {
     display: block;
-    background-color: #f00; /* Red background for emphasis */
-    color: #fff; /* White text color */
+    background-color: #f00;
+    color: #fff;
     padding: 10px;
     text-align: center;
   }
 }
-

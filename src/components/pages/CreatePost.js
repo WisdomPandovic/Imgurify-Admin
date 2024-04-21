@@ -115,10 +115,10 @@ function CreatePost() {
   return (
     <Container fluid>
       <Row>
-        <Col md={3}>
+        <Col md={2}>
           <SideBar />
         </Col>
-        <Col md={9} className="bg-deems">
+        <Col md={10} className="bg-deems">
           <Container fluid style={{ paddingTop: "20px" }}>
             <h2 className="signin-1 text-center">Create a Post</h2>
             <form onSubmit={handleSubmit} className="create-post-form">

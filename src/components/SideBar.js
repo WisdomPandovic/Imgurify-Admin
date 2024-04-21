@@ -11,7 +11,7 @@ import { ImgurifyContext } from '../components/context/ImgurifyContext';
 const SideBar = () => {
     const { isLoggedIn, setIsLoggedIn, userID} = useContext(ImgurifyContext);
   return (
-    <div className="bg-white">
+    <div className="bg-white sidebar" >
             <Nav defaultActiveKey="/home" className="flex-column dashboard-link ">
                 <Nav  className="link-text" style={{ backgroundColor: '#5D60CC', color: 'white'}}>
                     <FaColumns className="link-icon" style={{ fontSize: '24px' }}/><span className='text-white' style={{ marginLeft: '20px' }}>Dashboard</span>

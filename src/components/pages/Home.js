@@ -2,8 +2,18 @@ import React, { useContext, useState, useEffect } from "react";
 // import { useEffect, useState, useContext } from "react";
 // import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link, useNavigate } from "react-router-dom";
-import { Navbar, Nav, Container, Row, Col, Button, Image, FormControl, InputGroup  } from "react-bootstrap";
-import { BsSearch } from 'react-icons/bs';
+import {
+  Navbar,
+  Nav,
+  Container,
+  Row,
+  Col,
+  Button,
+  Image,
+  FormControl,
+  InputGroup,
+} from "react-bootstrap";
+import { BsSearch } from "react-icons/bs";
 import SideBar from "../SideBar";
 import PostDetails from "../PostDetails";
 // import { FaHome, FaUser, FaCog, FaColumns } from 'react-icons/fa';
@@ -21,7 +31,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Notification from "../Notification";
-import exampleImage from '../../images/images.png'; 
+import exampleImage from "../../images/images.png";
 
 function Home() {
   const { isLoggedIn, setIsLoggedIn } = useContext(ImgurifyContext);
@@ -107,25 +117,33 @@ function Home() {
           <SideBar />
         </Col>
         <Col md={10} className="bg-deem">
-     
-    <div className="top-bar p-3">
-    <div>
-      <InputGroup className="search pb-3">
-        <InputGroup.Text id="search-icon" className="search-icon">
-          <BsSearch />
-        </InputGroup.Text>
-        <FormControl
-          style={{ backgroundColor: '#DDE5FC', borderRadius: '20px' }}
-          aria-label="Search"
-          aria-describedby="search-icon"
-        />
-      </InputGroup>
-    </div>
-        <div className=" d-flex justify-content-between ">
+          <div className="top-bar p-3">
+            <div>
+              <InputGroup className="search pb-3">
+                <InputGroup.Text id="search-icon" className="search-icon">
+                  <BsSearch />
+                </InputGroup.Text>
+                <FormControl
+                  style={{ backgroundColor: "#DDE5FC", borderRadius: "20px" }}
+                  aria-label="Search"
+                  aria-describedby="search-icon"
+                />
+              </InputGroup>
+            </div>
+            <div className=" d-flex justify-content-between ">
               <div className="welcome-note d-flex">
-                <Image src={exampleImage} style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '50%' }}  />
+                <Image
+                  src={exampleImage}
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    objectFit: "cover",
+                    borderRadius: "50%",
+                  }}
+                />
                 <p className="newpost text-dark pt-2 text-uppercase ms-2">
-                  Welcome, <br></br> <span className="text-dark">{getUsername()}</span> !
+                  Welcome, <br></br>{" "}
+                  <span className="text-dark">{getUsername()}</span> !
                 </p>
               </div>
               <div className="d-flex justify-content-end my-2 my-lg-0 ">
@@ -161,26 +179,21 @@ function Home() {
                   </div>
                 </div>
               )}
-        </div>
-        </div>
+            </div>
+          </div>
           <Container fluid>
-            
-            <Row>
-              <Col md={3} className="box">
+            <Row className="m-1">
+              <Col md={4} className="box ">
                 <FaUser className="box-icon" />
                 <p className="box-text">Users ({Users.length})</p>
               </Col>
-              <Col md={3} className="box">
+              <Col md={4} className="box mr-2">
                 <FontAwesomeIcon icon={faImage} className="box-icon" />
                 <p className="box-text">Post ({posts.length})</p>
               </Col>
-              <Col md={3} className="box">
+              <Col md={4} className="box  ">
                 <FontAwesomeIcon icon={faFolder} className="box-icon" />
                 <p className="box-text">Tags ({tags.length})</p>
-              </Col>
-              <Col md={3} className="box">
-                <FaColumns className="box-icon" />
-                <p className="box-text">Dashboard</p>
               </Col>
             </Row>
             <div className="users-table">
