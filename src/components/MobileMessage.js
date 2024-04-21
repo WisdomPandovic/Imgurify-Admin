@@ -1,5 +1,3 @@
-// MobileMessage.js
-
 import React from 'react';
 
 function MobileMessage() {
