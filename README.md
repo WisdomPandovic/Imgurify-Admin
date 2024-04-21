@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Imgurify Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based admin dashboard for managing posts, users, tags, and more.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Introduction](#introduction)
+2. [Components](#components)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is an admin dashboard built with React for managing various aspects of the Imgurify platform. It includes components for handling user authentication, managing posts and tags, and displaying user information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+1. **PostLikes**
+   - Description: This component displays posts along with their like counts and comments.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Signin**
+   - Description: Allows only Admin users to log in using their credentials. It communicates with the server for authentication.
 
-### `npm run build`
+3. **Signup**
+   - Description: Provides a user registration form. It sends a POST request to create a new user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Tag**
+   - Description: Manages tags, allowing the creation of new tags and displaying existing ones. It also provides options to edit and delete tags.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **UpdatePost**
+   - Description: Allows updating a post by sending a PUT request to the server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **UpdateTag**
+   - Description: Similar to `UpdatePost`, this component allows updating tag information.
 
-### `npm run eject`
+7. **UpdateUsers**
+   - Description: Provides a form for updating user information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+8. **Users**
+   - Description: Displays a list of users, allowing editing and deleting user information.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+9. **UsersWithPosts**
+   - Description: Displays users along with their associated posts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To set up the project, follow these steps:
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/WisdomPandovic/imgurify-Admin.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Change to project directory
+cd project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
 
-### Code Splitting
+Usage
+Start the development server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-### Analyzing the Bundle Size
+Fork the repository
+Create a new branch for your feature or fix
+Make your changes and commit them
+Push the changes to your fork
+Submit a pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
