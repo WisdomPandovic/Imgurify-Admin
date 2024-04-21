@@ -117,7 +117,7 @@ function Home() {
           <SideBar />
         </Col>
         <Col md={10} className="bg-deem">
-          <div className="top-bar p-3">
+          <div className="top-bar p-3 m-3">
             <div>
               <InputGroup className="search pb-3">
                 <InputGroup.Text id="search-icon" className="search-icon">
@@ -182,16 +182,16 @@ function Home() {
             </div>
           </div>
           <Container fluid>
-            <Row className="m-1">
-              <Col md={4} className="box ">
+            <Row className="d-flex m-1">
+              <Col className="box ">
                 <FaUser className="box-icon" />
                 <p className="box-text">Users ({Users.length})</p>
               </Col>
-              <Col md={4} className="box mr-2">
+              <Col  className="box mx-2">
                 <FontAwesomeIcon icon={faImage} className="box-icon" />
                 <p className="box-text">Post ({posts.length})</p>
               </Col>
-              <Col md={4} className="box  ">
+              <Col  className="box ">
                 <FontAwesomeIcon icon={faFolder} className="box-icon" />
                 <p className="box-text">Tags ({tags.length})</p>
               </Col>
